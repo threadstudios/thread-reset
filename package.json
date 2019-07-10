@@ -1,5 +1,12 @@
 {
   "dependencies": {
     "reset-css": "^4.0.1"
-  }
+  },
+  "name": "thread-reset",
+  "version": "0.1.0",
+  "description": "Basic styles for thread projects",
+  "main": "/src/base.scss",
+  "repository": "git@github.com:threadstudios/thread-reset.git",
+  "author": "Paul Westerdale <paul@westerdale.me>",
+  "license": "MIT"
 }
