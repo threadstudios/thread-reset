@@ -1,0 +1,34 @@
+
+:root {
+    --bp-xs-width: 360px;
+    --bp-sm-width: 768px;
+    --bp-md-width: 992px;
+    --bp-lg-width: 1200px;
+    --spacing-value: 6px;
+}
+
+@function spacing($val) {
+    @return calc($val * var(--spacing-value));
+}
+
+@mixin breakpoint($class) {
+    @if $class == xs {
+        @media (max-width: var(--bp-xs-width)) {
+            @content;
+        }
+    } @else if $class == sm {
+        @media (min-width: var(--bp-sm-width)) {
+            @content;
+        }
+    } @else if $class == md {
+        @media (min-width: var(--bp-md-width)) {
+            @content;
+        }
+    } @else if $class == lg {
+        @media (min-width: var(--bp-lg-width)) {
+            @content;
+        }
+    } @else {
+        @warn "Breakpoint mixin supports: xs, sm, md, lg";
+    }
+}

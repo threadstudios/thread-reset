@@ -1,0 +1,8 @@
+@import "../node_modules/reset-css/sass/reset";
+@import "mixins";
+
+html {
+    font-size: 62.5%;
+}
+
+@import "type";
