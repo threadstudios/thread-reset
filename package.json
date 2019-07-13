@@ -3,7 +3,7 @@
     "reset-css": "^4.0.1"
   },
   "name": "@threadws/reset",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Basic styles for thread projects",
   "main": "/src/base.scss",
   "repository": "git@github.com:threadstudios/thread-reset.git",
